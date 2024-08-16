@@ -1,0 +1,543 @@
+//? 1114PX MEDİA QUERY (MEDİUM DESKTOP)
+@media (max-width: 1114px) {
+  //!CATEGORY MODELS ROW TEXT SETTİNGS START
+  .category-models__row {
+    .category-models__col {
+      .category-models__content {
+        figcaption {
+          font-size: 12px !important;
+
+          strong {
+            font-size: 11px !important;
+          }
+        }
+      }
+    }
+  }
+  //!CATEGORY MODELS ROW TEXT SETTİNGS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    p {
+      font-size: 50px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+}
+
+//? 992PX MEDİA QUERY (SMALL DESKTOP AND LARGE TABLETS)
+@media (max-width: 992px) {
+  //! NAVBAR LİNKS HİDDEN SETTİNGS START
+  .navbar-container {
+    .navbar-links {
+      display: none;
+    }
+  }
+  //! NAVBAR LİNKS HİDDEN SETTİNGS START
+
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS START
+  .main-video__container {
+    .show-video {
+      &::before {
+        height: 80% !important;
+      }
+
+      video {
+        height: 80% !important;
+      }
+    }
+
+    .show-content {
+      height: 75% !important;
+
+      h1 {
+        font-size: 48px !important;
+      }
+    }
+  }
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS END
+
+  //!CATEGORY MODELS ROW TEXT SETTİNGS START
+  .category-models {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  //!CATEGORY MODELS ROW TEXT SETTİNGS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    p {
+      font-size: 38px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+
+  //* ECCOMERCE COMMENTS CONTENT TEXT START
+  .eccomerce-comments-content {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  //* ECCOMERCE COMMENTS CONTENT TEXT END
+}
+
+//? 768px MEDİA QUERY (MEDİUM TABLETS)
+@media (max-width: 768px) {
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS START
+  .main-video__container {
+    .show-content {
+      h1 {
+        font-size: 38px !important;
+
+        br:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS END
+
+  //? CATEGORY GROUP MENU İMAGE SETTİNS START
+  .category-group {
+    &__row {
+      display: flex !important;
+      flex-direction: column !important;
+
+      .category-group-item {
+        .category-group-img {
+          height: 450px !important;
+        }
+      }
+    }
+  }
+  //? CATEGORY GROUP MENU İMAGE SETTİNS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    p {
+      font-size: 30px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+
+  //! ECCOMERCE SİGN UP İNPUT SETTİNGS START
+  .eccomerce-signup-container {
+    header {
+      h1 {
+        font-size: 24px !important;
+      }
+    }
+
+    .signup-input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 85% !important;
+      }
+
+      button {
+        width: 90%;
+      }
+    }
+  }
+  //! ECCOMERCE SİGN UP İNPUT SETTİNGS END
+}
+
+//? 610px MEDİA QUERY (SMALL TABLETS)
+@media (max-width: 610px) {
+  //! NAVBAR LİNKS TEXT SETTİNGS START
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    column-gap: 4rem;
+
+    .navbar-logo {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  //! NAVBAR LİNKS TEXT SETTİNGS END
+
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS START
+  .category-models__row {
+    .category-models__col:last-child {
+      .model1-foto2 {
+        width: 95% !important;
+      }
+    }
+  }
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    p {
+      font-size: 25px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+
+  //?ECCOMERCE XL PHOTO START
+  .eccomerce-xl-photo {
+    height: 70vh !important;
+  }
+  //?ECCOMERCE XL PHOTO END
+
+  //? ECCOMERCE FOOTER LAST POSTİON SETTİNG (START)
+  .eccomerce-footer-end {
+    .eccomerce-footer-end-row {
+      position: relative;
+      justify-content: center !important;
+      text-align: center;
+
+      .eccomerce-footer-end-col {
+        position: static !important;
+
+        .cards-img {
+          left: 50%;
+          transform: translateX(-50%);
+          height: 150px !important;
+          bottom: -200% !important;
+        }
+      }
+    }
+  }
+  //? ECCOMERCE FOOTER LAST POSTİON SETTİNG (END)
+}
+
+//? 475PX MEDİA QUERY (LARGE PHONE)
+@media (max-width: 431px) {
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS START
+  .main-video__container {
+    .show-content {
+      left: 10px !important;
+
+      h1 {
+        font-size: 28px !important;
+      }
+
+      p {
+        width: 100% !important;
+      }
+
+      a {
+        padding: 12px 28px !important;
+      }
+    }
+  }
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS END
+
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS START
+  .category-models {
+    .category-models__header {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .category-models__row {
+      margin: 0 !important;
+
+      .model1-foto2 {
+        width: 90% !important;
+      }
+
+      .category-models__col:last-child {
+        .model1-foto2 {
+          width: 93.8% !important;
+        }
+      }
+    }
+  }
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS END
+
+  //? CATEGORY GROUP MENU İMAGE SETTİNS START
+  .category-group {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  //? CATEGORY GROUP MENU İMAGE SETTİNS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    p {
+      font-size: 20px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+
+  //?ECCOMERCE XL PHOTO START
+  .eccomerce-xl-photo {
+    height: 60vh !important;
+
+    .eccomerce-xl-photo__content {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+      h1 {
+        font-size: 28px !important;
+
+        br {
+          display: none;
+        }
+      }
+
+      a {
+        padding: 12px 28px !important;
+      }
+    }
+  }
+  //?ECCOMERCE XL PHOTO END
+
+  //* ECCOMERCE COMMENTS CONTENT TEXT START
+  .eccomerce-comments-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    .eccomerce-comments-content {
+      display: grid !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+  //* ECCOMERCE COMMENTS CONTENT TEXT END
+
+  // ECCOMERCE INSTAGRAM SECTİON START
+  .eccomerce-instagram-share {
+    .instagram-share-row {
+      img {
+        width: 370px !important;
+      }
+    }
+  }
+  // ECCOMERCE INSTAGRAM SECTİON END
+
+  //! ECCOMERCE FOOTER FİRST START
+  .eccomerce-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .eccomerce-footer-row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1rem !important;
+
+      .eccomerce-footer-col {
+        ul {
+          h4 {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          li {
+            margin: 0.5rem 0 !important;
+          }
+        }
+      }
+    }
+
+    .eccomerce-footer-desc {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  //! ECCOMERCE FOOTER FİRST END
+}
+
+//? 375PX MEDİA QUERY (MEDİUM PHONE)
+@media (max-width: 375px) {
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS START
+  .main-video__container {
+    .show-content {
+      h1 {
+        font-size: 24px !important;
+
+        br {
+          display: none;
+        }
+      }
+
+      a {
+        padding: 10px 24px !important;
+      }
+    }
+  }
+  //!MAİN VİDEO CONTAİNER TEXT SETTİNS END
+
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS START
+  .category-models {
+    .category-models__row {
+      padding: 0 !important;
+
+      .category-models__content {
+        figcaption {
+          font-size: 14px !important;
+
+          strong {
+            font-size: 13px !important;
+          }
+        }
+
+        small {
+          font-size: 10px !important;
+        }
+      }
+
+      .category-models__col:last-child {
+        .model1-foto2 {
+          width: 93.6% !important;
+        }
+      }
+    }
+  }
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS END
+
+  //? CATEGORY GROUP MENU İMAGE SETTİNS START
+  .category-group {
+    padding: 0 0.5rem !important;
+
+    .category-group-content {
+      h4 {
+        font-size: 22px !important;
+        margin-bottom: 0.3rem !important;
+      }
+
+      a {
+        font-size: 14px !important;
+        padding: 12px 24px !important;
+      }
+    }
+  }
+  //? CATEGORY GROUP MENU İMAGE SETTİNS END
+
+  //* ECCOMERCE FRAMER TEXT SETTİNS START
+  .eccomerce-framer-text {
+    padding: 0 !important;
+    padding-left: 0.8rem !important;
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+  //* ECCOMERCE FRAMER TEXT SETTİNS END
+
+  //?ECCOMERCE XL PHOTO START
+  .eccomerce-xl-photo {
+    height: 55vh !important;
+
+    .eccomerce-xl-photo__content {
+      padding-left: 0.5rem !important;
+
+      h1 {
+        font-size: 22px !important;
+      }
+
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  //?ECCOMERCE XL PHOTO END
+
+  // ECCOMERCE INSTAGRAM SECTİON START
+  .eccomerce-instagram-share {
+    .instagram-share-row {
+      img {
+        width: 340px !important;
+      }
+    }
+  }
+  // ECCOMERCE INSTAGRAM SECTİON END
+}
+
+//? 349PX MEDİA QUERY (SMALL PHONE)
+@media (max-width: 340px) {
+  //! NAVBAR LİNKS TEXT SETTİNGS START
+  .navbar-container {
+    
+    .navbar-btn {
+      gap: 1rem !important;
+
+      a {
+        font-size: 12px !important;
+      }
+    }
+
+  }
+  //! NAVBAR LİNKS TEXT SETTİNGS END
+
+  // ECCOMERCE INSTAGRAM SECTİON START
+  .eccomerce-instagram-share {
+    .instagram-share-row {
+      img {
+        width: 300px !important;
+      }
+    }
+  }
+  // ECCOMERCE INSTAGRAM SECTİON END
+}
+
+//? 300PX MEDİA QUERY (EXTRA SMALL PHONE)
+@media (max-width: 300px) {
+  //! NAVBAR LİNKS TEXT SETTİNGS START
+  .navbar-container {
+    
+    .navbar-btn {
+      gap: .5rem !important;
+
+      a {
+        font-size: 10px !important;
+      }
+    }
+
+  }
+  //! NAVBAR LİNKS TEXT SETTİNGS END
+
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS START
+  .category-models {
+
+    header {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+      text-align: center;
+    }
+
+    .category-models__row {
+      padding: 0 !important;
+
+      .category-models__content {
+        figcaption {
+          font-size: 14px !important;
+
+          strong {
+            font-size: 13px !important;
+          }
+        }
+
+        small {
+          font-size: 10px !important;
+        }
+      }
+
+      .category-models__col:last-child {
+        .model1-foto2 {
+          width: 93.6% !important;
+        }
+      }
+    }
+  }
+  //* CATEGORY LAST MODELS WİDTH SETTİNGS END
+
+  // ECCOMERCE INSTAGRAM SECTİON START
+  .eccomerce-instagram-share {
+    .instagram-share-row {
+      img {
+        width: 260px !important;
+      }
+    }
+  }
+  // ECCOMERCE INSTAGRAM SECTİON END
+}

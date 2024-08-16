@@ -1,0 +1,636 @@
+//BASE SCSS START
+@import 'bootstrap';
+@import 'responsive';
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+//VARİABLE SHOURTCUT
+$baskerville: "Baskervville", serif;
+$inter: "Inter", sans-serif;
+$average: "Average Sans", sans-serif;
+$black-color: #000;
+$white-color: #fff;
+$small-text: #757575;   
+$footer-small: #666666;
+$input-bg: #f5f5f5;
+
+.links {
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: 600;
+    color: $black-color;
+    text-decoration: none;
+}
+//BASE SCSS END 
+
+//NAVBAR START
+.main-nav {
+    background-color: $white-color;
+}
+
+.navbar-container {
+
+    .navbar-links {
+
+        a {
+           @extend .links;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .navbar-logo {
+
+        img {
+            width: 30px;
+            height: 35px;
+            object-fit: cover;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        figcaption {
+            font-family: $average;
+            font-size: 24px;
+            letter-spacing: .5rem;
+        }
+    }
+
+    .navbar-btn {
+        
+        a {
+           @extend .links; 
+            letter-spacing: .5px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//NAVBAR END
+
+//HEADER START
+.main-header__animate {
+    background-color: #000;
+    overflow: hidden;
+    width: 4000px;
+
+    .main-header__items {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        height: 100%;
+        padding: 1rem 0 0 0; 
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: $inter;
+        animation: header 50s linear infinite;
+
+        @keyframes header {
+            0% {
+                transform: translateX(-2120px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+//HEADER END   
+
+//MAİN HOME SHOW VİDEO START
+.main-video__container {
+    position: relative;
+
+    .show-video {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    pointer-events: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0, 0.3);
+        width: 100%;
+        height: 100%;
+    }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .show-content {
+        position: absolute;
+        left: 50px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90%;
+        color: #fff; 
+        font-family: $inter;
+
+        h1 {
+            font-size: 72px;
+            font-weight: 600;
+        }
+
+        p {
+            width: 60%;
+        }
+
+        a {
+            font-weight: 600;
+            text-decoration: none;
+            background-color: #fff;
+            color: #000;
+            align-self: flex-start;
+            padding: 16px 32px;
+            border-radius: 50px;
+        }
+    }
+}
+//MAİN HOME SHOW VİDEO END
+
+//CATEGORY MODEL AND PRODUCTS START
+.category-models__row {
+
+    .category-models__col {
+        font-family: $inter;
+        position: relative;
+        cursor: pointer;
+ 
+        &:hover .model1-foto2 {
+            display: block;
+        }
+
+        img {
+            width: 100%; 
+            height: 85%;
+            object-fit: cover;
+            display: block;
+            position: relative;
+            pointer-events: none;
+        }
+
+        .model1-foto2 {
+            position: absolute;
+            left: 12px; 
+            top: 0;
+            display: none;
+            width: 93.2%;
+        }
+
+        .category-models__content {
+
+            figcaption {
+                font-size: 15px;
+                font-weight: 600;
+    
+                strong {
+                    font-size: 15px;
+                    font-weight: 600;
+                    float: right;
+                }
+            }
+    
+            small {
+                font-size: 14px;
+                color: $small-text;
+            }
+        }
+    }
+}
+//CATEGORY MODEL AND PRODUCTS END
+
+//CATEGORY GROUP MENU START
+.category-group{
+    font-family: $inter;
+
+    &__header {
+    
+        h2 {
+            font-size: 24px; 
+            font-weight: 700;
+        }
+    }
+ 
+    &__row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        .category-group-item {
+            position: relative;
+            height: 100%;
+            
+            .category-group-img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+            }
+
+            .category-group-content {
+                position: absolute;
+                left: 0;
+                bottom: 0%;
+
+                h4 {
+                    color: #fff;
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-shadow: 1px 1px 5px #000;
+                }
+
+                a {
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: #000;
+                    background-color: #fff;
+                    padding: 16px 32px;
+                    border-radius: 50px;
+                    transition: all .6s;
+                    
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+//CATEGORY GROUP MENU END
+
+//!ECCOMERCE FRAMER TEXT START
+.eccomerce-framer-text {
+
+    p {
+        font-size: 64px;
+        font-family: $baskerville;
+        color: #000;
+    }
+}
+//!ECCOMERCE FRAMER TEXT END 
+
+//?ECCOMERCE XL PHOTO START
+.eccomerce-xl-photo {
+    background-image: url(../img/xl-bg.webp);
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    background-attachment: fixed;
+
+    &__content {
+        font-family: $inter;
+        color: #fff;
+
+
+        h1 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #fff;
+            color: #000;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all .6s;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+
+    }
+}
+//?ECCOMERCE XL PHOTO END
+
+//* ECOMMERCE COMMENTS START
+.eccomerce-comments-container {
+    font-family: $inter;
+
+    .eccomerce-comments-header {
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    .eccomerce-comments-col {
+
+        header {
+            font-weight: 600;
+        }
+
+        .eccommers-comment-stars {
+            user-select: none;
+
+            i {
+                font-size: 12px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+//* ECOMMERCE COMMENTS END
+
+// ECCOMERCE INSTAGRAM SECTİON START
+.eccomerce-instagram-share {
+
+    .instagram-share-header {
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: $inter;
+        }
+    }
+
+    .instagram-share-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .instagram-share-col {
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover .instagram-share-hover-content {
+                visibility: visible;
+            }
+
+            &:hover .instagram-share-layer {
+                display: none;
+            }
+
+            .instagram-share-layer {
+                position: absolute;
+                top: 10px;
+                right: 10px; 
+                color: #fff;
+                font-size: 1.6rem;
+                z-index: 2;
+
+                i {
+                    font-weight: 100;
+                }
+            }
+
+            .instagram-share-img {
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: #000;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 60%;
+                    z-index: 1;
+                    visibility: hidden;
+                }
+
+                &:hover::before {
+                    visibility: visible;
+                }
+
+                img {
+                    width: 363px;
+                    height: 410px;
+                    object-fit: cover;
+                    position: relative;
+                    pointer-events: none;
+                }
+            }
+
+            .instagram-share-hover-content {
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.3rem;
+                width: 100%;
+                z-index: 2;
+                user-select: none;
+                visibility: hidden;
+                pointer-events: none;
+            }
+        }
+    }
+}
+// ECCOMERCE INSTAGRAM SECTİON END
+
+//ECCOMERCE SİGN UP SECTİON START
+.eccomerce-signup-container {
+    font-family: $inter;
+
+    header {
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        p {
+           font-size: 14px; 
+        }
+    }
+
+    .signup-input-box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        input {
+            background-color: $input-bg;
+            border: 2px solid $input-bg;
+            padding: 16px;
+            border-radius: 50px;
+            width: 20%;
+
+            &:invalid {
+                border: 2px solid red;
+            }
+        }
+
+        button {
+            border: 2px solid #000;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50px;
+            padding: 16px;
+            transition: all .6s;
+            user-select: none;
+
+            &:hover {
+                background-color: lighten(#000, 20%);
+            }
+        }
+    }
+}
+//ECCOMERCE SİGN UP SECTİON END
+
+//! ECCOMERCE FOOTER FİRST START 
+.eccomerce-footer {
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(227, 227, 227);
+    padding-top: 0 !important;
+    text-align: center;
+
+    .eccomerce-footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7rem;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+
+        .eccomerce-footer-col {
+            
+            ul {
+
+                h4 {
+                    font-family: $inter;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                li {
+                    margin: .8rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-family: $inter;
+                        font-size: 14px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .eccomerce-footer-desc {
+        margin-left: .5rem !important;
+        margin-right: .5rem !important;
+
+        p {
+            font-family: $inter;
+            font-size: 14px !important;
+
+            a {
+                color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+//! ECCOMERCE FOOTER FİRST END
+
+//? ECCOMERCE FOOTER LAST (START)
+.eccomerce-footer-end {
+
+    .eccomerce-footer-end-row {
+
+        .eccomerce-footer-end-col {
+            position: relative;
+
+            .cards-img {
+                user-select: none;
+                pointer-events: none;
+                height: 160px;
+                position: absolute;
+                right: 0;
+                bottom: -150%;
+            }
+
+            a {
+                color: #000;
+                font-family: $inter;
+                font-size: 14px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .eccomerce-footer-end-turn {
+            overflow: hidden;
+            width: 420px;
+            background: none;
+            position: fixed;
+            bottom: -100px;
+            right: -100px;
+            z-index: 8;
+            pointer-events: none;
+
+            img {
+                width: 100%;
+                height: auto;
+                animation: transtext 12s infinite linear;
+                user-select: none;
+
+                @keyframes transtext {
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}  
+//? ECCOMERCE FOOTER LAST (END)
