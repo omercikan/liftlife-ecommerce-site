@@ -30,7 +30,7 @@
 <li>Proje Dizini:</li>
 <br>
 
-    cd liftlife
+    cd liftlife-ecommerce-site-main
 <br>
 <li>Gerekli Paketleri Yükleyin (Varsa)</li>
 <br>
