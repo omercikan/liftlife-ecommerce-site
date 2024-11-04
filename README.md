@@ -24,7 +24,7 @@
 <li>Depoyu Klonlayın:</li>
 <br> 
   
-    git clone https://github.com/kullanici_adiniz/liftlife.git
+    git clone https://github.com/omercikan/liftlife-ecommerce-site.git
 <br>
     
 <li>Proje Dizini:</li>
