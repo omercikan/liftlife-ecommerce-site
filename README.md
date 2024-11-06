@@ -32,7 +32,7 @@
 
     cd liftlife-ecommerce-site-main
 <br>
-<li>Gerekli Paketleri Yükleyin (Varsa)</li>
+<li>Gerekli Paketleri Yükleyin</li>
 <br>
 
     npm install
